@@ -1,0 +1,53 @@
+<app-cabecera></app-cabecera>
+<div class="contenedor container-fluid">
+    
+    <div class="row">
+        <article class="col">
+            <h1 class="worher ">WORHER</h1>
+            <section class="tarjeta">
+                <p>¡Bienvenido a Worher!</p>
+                <p>Worher es una aplicación pensada para ayudar a equipos de trabajo en la organización de tareas de proyectos.</p>
+                <p>En Worher, un usuario puede tener todos los proyectos activos que necesite. Estos proyectos podrán ser compartidos con otros usuarios, de manera que todo el equipo de trabajo pueda acceder a un mismo proyecto.</p>
+            </section>
+        </article>
+        <article class="col-12 col-lg-4 card card-container p-4 login">
+            <img id="profile-img" src="assets/images/logo.png" alt="logo de Worher"/>
+            <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" autocomplete="off" novalidate>
+                <span class="obligatorio m-2" *ngIf="f.submitted && isLoginFailed">
+                    Error en el inicio de sesión: {{ errorMessage }}
+                </span>
+    
+                <div class="form-group m-2">
+                    <label for="email">Email 
+                        <span class='obligatorio'>* </span>
+                        <span class="obligatorio error" *ngIf="email.errors && f.submitted">CAMPO OBLIGATORIO</span>
+                    </label>
+                    <input type="text" class="form-control" aria-label="Introducir email de usuario" name="email" id="email" [(ngModel)]="form.email" required
+                        #email="ngModel" />
+                </div>
+    
+                <div class="form-group m-2">
+                    <label for="password">Contraseña 
+                        <span class='obligatorio'>* </span>
+                        <span class="obligatorio error" *ngIf="password.errors && f.submitted && password.errors['required']">CAMPO OBLIGATORIO</span>
+                    </label>
+                    <input type="password" class="form-control" aria-label="Introducir contraseña" id="password" name="password" [(ngModel)]="form.password" required
+                        #password="ngModel" />
+                </div>
+                <div class="form-group m-2">
+                    <button class="btn boton btn-block" aria-label="Iniciar sesión">
+                        Iniciar Sesión
+                    </button>
+                </div>
+                <p>¿Aún no tienes una cuenta? <a href="#" class='enlace'  routerLink="/registro" aria-label="Ir a registro">¡Registrate!</a></p>
+                
+            </form>
+            <div class="alert alert-success" *ngIf="isLoggedIn">
+                Estas logeado.
+            </div>
+        </article>
+
+        
+    </div>
+</div>
+<app-footer></app-footer>

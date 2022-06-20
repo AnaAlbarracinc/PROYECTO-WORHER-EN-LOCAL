@@ -1,0 +1,8 @@
+App\Entity\Lista:
+  attributes:
+    id:
+      groups: ['proyecto']
+    nombre:
+      groups: ['proyecto']
+    tareas:
+      groups: ['proyecto']

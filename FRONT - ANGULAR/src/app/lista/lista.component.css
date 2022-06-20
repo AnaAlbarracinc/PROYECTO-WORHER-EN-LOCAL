@@ -1,0 +1,124 @@
+/*
+    POSICIONAMIENTO Y TAMAÑO
+*/
+
+.tarjeta {
+    height: auto;
+    position: relative;
+    padding: 5%;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.tarea {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tarea .boton svg {
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 40px;
+    right: 20px;
+    z-index: 1;
+}
+
+.dropdown-content button {
+    text-align: left;
+    transition: background-color 1s;
+}
+
+.dropdown-content button:hover {
+    font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.guardar,
+.cancelar {
+    margin: 1%;
+}
+
+#nombre {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+#nombre::first-letter {
+    text-transform: uppercase;
+}
+
+
+
+/*
+    BORDES
+*/
+
+.tarjeta {
+    border-radius: 5px;
+}
+
+.tarea {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.tarea .boton svg {
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    border-radius: 15px 0px 15px 15px;
+}
+
+.dropdown-content button {
+    border-radius: 0px 0px 15px 15px;
+    border: 3px solid black;
+}
+
+.dropdown-content button:first-child {
+    border-radius: 15px 0px 0px 0px;
+    border-width: 3px 3px 0px 3px;
+}
+
+
+
+/*
+    COLORES
+*/
+
+.tarea .boton svg {
+    background-color: black;
+    color: transparent;
+}
+
+.dropdown-content {
+    background-color: white;
+}
+
+.dropdown-content button {
+    color: black;
+}
+
+.dropdown-content button:hover {
+    background-color: rgb(129, 59, 255);
+    color: white;
+}

@@ -1,0 +1,217 @@
+/*
+    POSICIONAMIENTO Y TAMAÑO
+*/
+
+.botones {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+
+
+.mostrarChat>.botones>.boton {
+    width: 200px;
+}
+
+.miembros {
+
+    position: relative;
+}
+
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: .5%;
+    padding-bottom: 1%;
+}
+
+.nombres {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 45px;
+    z-index: 1000;
+    padding: 1%;
+    overflow-x: hidden;
+    width: 350px;
+}
+
+.nombres span {
+    margin: auto 10px;
+}
+
+li {
+    list-style: none;
+}
+
+
+h1::first-letter,
+li::first-letter {
+    text-transform: uppercase;
+}
+
+.fil {
+    text-align: start;
+}
+
+.miembros {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.miembro {
+    margin: 1%;
+}
+
+.miembros p {
+    margin-top: 20px;
+}
+
+.nombres {
+    display: none;
+}
+
+.miembros p:hover~.nombres {
+    display: block;
+}
+
+
+
+.botonAdd {
+    width: 100%;
+}
+
+.botonAdd svg {
+    margin-bottom: 2%;
+    padding: 1.5%;
+}
+
+.lista {
+    padding: 5%;
+    max-width: 400px;
+    min-width: 300px;
+    margin-top: 10%;
+    margin-bottom: 7.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.chat {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.proyecto {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.filtro {
+
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 20px 0 black;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 3px solid rgba( 255, 255, 255, 0.3 );
+    border-radius: 5px;
+    color:black;
+    width: 400px;
+}
+
+/******************************************************************************************
+***************************************TABLET**********************************************
+******************************************************************************************/
+@media(min-width:640px) {
+    .filtro {
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        background: transparent;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+ }
+ 
+
+
+/******************************************************************************************
+**************************************DESKTOP**********************************************
+******************************************************************************************/
+@media(min-width:1224px) {
+    .chat {
+        display: block;
+    }
+
+    .botonChat {
+        display: none;
+    }
+
+    .mostrarChat {
+        display: none;
+    }
+}
+
+/*
+    BORDES
+*/
+
+
+.cabecera {
+    border-bottom: 1px solid gray;
+}
+
+.nombres {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+
+.botonAdd svg {
+    border-radius: 50%;
+}
+
+.lista {
+    border-radius: 5px;
+}
+
+/*
+    COLORES
+*/
+
+
+.nombres {
+    background-color: white;
+}
+
+.botonAdd {
+    color: white;
+}
+
+.botonAdd svg {
+    background-color: black;
+}
+
+.botonAdd svg:hover {
+    background-color: white;
+    color: black;
+    outline: 3px solid black;
+    transition: all .3s;
+}
+
+.mostrarChat {
+    color: black;
+    min-height: 100vh;
+}

@@ -1,0 +1,10 @@
+App\Entity\Usuario:
+  attributes:
+    id:
+      groups: ['proyecto']
+    nombre:
+      groups: ['proyecto']
+    apellido:
+      groups: ['proyecto']
+    email:
+      groups: ['proyecto']

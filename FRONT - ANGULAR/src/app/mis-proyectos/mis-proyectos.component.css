@@ -1,0 +1,59 @@
+/*
+    POSICIONAMIENTO Y TAMAÑO
+*/
+
+.tarjeta {
+    padding: 2%;
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#nombre {
+    width: 100%;
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+.boton {
+    width: 100%;
+}
+
+
+table .eliminar {
+    width: 50px;
+}
+
+.proyectos {
+    min-height: 100vh;
+}
+
+/*
+    BORDES
+*/
+
+
+
+#nombre {
+    border-bottom: 3px solid black;
+}
+
+
+
+
+/*
+COLORES
+*/
+
+
+.proyectos {
+    color: black;
+}

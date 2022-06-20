@@ -1,0 +1,29 @@
+footer {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    color:white;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+ .enlace{
+    color:white;
+}
+
+footer img{
+    width: 100px;
+}
+
+
+
+/******************************************************************************************
+***************************************TABLET**********************************************
+******************************************************************************************/
+@media(min-width:640px) {
+    
+ }

@@ -1,0 +1,75 @@
+/*
+    POSICIONAMIENTO Y TAMAÑO
+*/
+.loader-wrapper {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.loader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: rotate 7s linear infinite;
+    padding: 5px;
+}
+
+.loader-inner {
+    animation-duration: 3s;
+}
+
+.contenedor {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+
+/*
+    BORDES
+*/
+
+.loader {
+    border: 10px solid transparent;
+    border-radius: 50%;
+}
+
+/*
+    COLORES
+*/
+
+.loader {
+    border-top-color: #813bff;
+    border-bottom-color: #000;
+}
+
+.loader-inner {
+    border-top-color: #ad99c1;
+    border-bottom-color: #fa63e1;
+}
+
+
+
+
+/*
+    ANIMACIÓN
+*/
+@keyframes rotate {
+    0% {
+        transform: scale(1) rotate(360deg);
+    }
+
+    50% {
+        transform: scale(.8) rotate(-360deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}

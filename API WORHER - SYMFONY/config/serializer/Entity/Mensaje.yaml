@@ -1,0 +1,12 @@
+App\Entity\Mensaje:
+  attributes:
+    id:
+      groups: ['proyecto']
+    texto:
+      groups: ['proyecto']
+    fecha:
+      groups: ['proyecto']
+    hora:
+      groups: ['proyecto']
+    usuario:
+      groups: ['proyecto']

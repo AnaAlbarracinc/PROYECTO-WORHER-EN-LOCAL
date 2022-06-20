@@ -1,0 +1,12 @@
+App\Entity\Proyecto:
+  attributes:
+    id:
+      groups: ['proyecto']
+    nombre:
+      groups: ['proyecto']
+    listas: 
+      groups: ['proyecto']
+    usuarios: 
+      groups: ['proyecto']
+    mensajes: 
+      groups: ['proyecto']

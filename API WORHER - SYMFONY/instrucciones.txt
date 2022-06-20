@@ -1,0 +1,261 @@
+Instrucciones cómo usar API de Worher
+
+
+                            ############
+                            Añadir proyecto
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/{ id de usuario}
+  body = {
+          "nombre":"Nombre proyecto"
+         }
+
+#########################################################################
+         
+                            ############
+                            Añadir lista
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/add_lista/{ id de proyecto }
+  body = {
+          "listas": [
+                     {
+                       "nombre": "nombre lista"
+                     }
+                  ]
+          }
+
+#########################################################################
+                                    
+                            ############
+                            Añadir tarea
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/add_tarea/{ id de lista }
+  body = {
+          "tareas": [
+                     {
+                      "nombre": "nombre tarea",
+                      "descripcion": "Esto es una descripcionn",
+                      "dificultad": 2,
+                      "prioridad": 3
+                     }
+                  ]
+          }
+
+#########################################################################
+          
+                            ############
+                            Borrar proyecto
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/remove_proyecto/{ id de proyecto }
+
+
+#########################################################################
+          
+                            ############
+                            Borrar lista
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/remove_lista/{ id de lista }
+
+
+#########################################################################
+          
+                            ############
+                            Borrar tarea
+                            ############
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/remove_tarea/{ id de tarea }
+
+
+#########################################################################
+          
+                            ######################
+                            Editar nombre proyecto
+                            ######################
+
+Method = POST
+
+  url = http://localhost:8000/api/edit_proyecto/{ id de proyecto }
+
+  body = {
+            "nombre":"Proyecto editado"
+          }
+
+
+
+#########################################################################
+          
+                            ###################
+                            Editar nombre lista
+                            ###################
+
+Method = POST
+
+  url = http://localhost:8000/api/edit_lista/{ id de lista }
+
+  body = {
+            "nombre":"lista editada"
+          }
+
+
+
+#########################################################################
+          
+                            ##########################
+                            Agregar usuario a proyecto
+                            ##########################
+
+Method = POST
+
+  url = http://localhost:8000/api/add_user/{ id de proyecto }/{ id de usuario}
+
+
+
+#########################################################################
+          
+                            ##########################
+                            Agregar mensaje a proyecto
+                            ##########################
+
+Method = POST
+
+  url = http://localhost:8000/api/add_mensaje/{ id de proyecto }/{ id de usuario}
+
+
+  body = {
+            "texto":"texto de mensaje"
+          }
+
+
+
+#########################################################################
+          
+                            #####################
+                            Recoger JSON de datos
+                            #####################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyectos/{ id de usuario}
+
+
+#########################################################################
+          
+                            #######################
+                            Recoger Proyecto por id
+                            #######################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/{ id de proyecto }/{ id de usuario}
+
+
+#########################################################################
+          
+                            #########################
+                            Recoger Usuario por email
+                            #########################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/search_user/{ email de usuario }
+
+
+#########################################################################
+          
+                            ############################
+                            Recoger Usuarios de proyecto
+                            ############################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/get_users/{ id de proyecto }
+
+
+#########################################################################
+          
+                            ############################
+                            Recoger Mensajes de proyecto
+                            ############################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/get_mensajes/{ id de proyecto }
+
+
+#########################################################################
+          
+                            ############################
+                            Recoger Usuario de proyecto
+                            ############################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/search_user/{ id de proyecto }/{ email de usuario}
+
+
+#########################################################################
+          
+                            ############################
+                            Cambiar tarea de lista
+                            ############################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/change_tarea/{ id de tarea}/{ id nueva lista}
+
+
+
+#########################################################################
+          
+                            ##################
+                            Abandonar proyecto
+                            ##################
+
+Method = GET
+
+  url = http://localhost:8000/api/proyecto/exit_proyecto/{ id de proyecto }/{ id de usuario }
+
+
+
+
+
+#########################################################################
+          
+                            #####################
+                            Añadir usuario a tarea
+                            #####################
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/add_user_tarea/{ id de tarea }/{ id de usuario }
+
+
+
+
+#########################################################################
+          
+                            #####################
+                            Eliminar usuario de tarea
+                            #####################
+
+Method = POST
+
+  url = http://localhost:8000/api/proyecto/remove_user_tarea/{ id de tarea }/{ id de usuario }
+
+

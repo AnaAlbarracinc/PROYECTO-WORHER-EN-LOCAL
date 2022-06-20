@@ -1,0 +1,80 @@
+/*
+    POSICIONAMIENTO Y TAMAÑO
+*/
+
+details summary>* {
+    display: inline;
+}
+
+.tarea {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7.5%;
+    min-height: 55px;
+}
+
+#dificultad {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+}
+
+#nombre {
+    margin-top: 1rem;
+}
+
+#prioridad {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.usuarios {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.usuario {
+    margin: 1%;
+}
+
+.datos {
+    line-height: .5rem;
+}
+
+.botones {
+    padding-bottom: 10px;
+}
+
+.boton {
+    width: 100%;
+}
+
+
+
+.nombres span {
+    margin: auto 10px;
+}
+
+/*
+    BORDES
+*/
+
+.tarea {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+
+
+
+
+/*
+    COLORES
+*/
+.tarea {
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
